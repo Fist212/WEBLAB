@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(46, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+.button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(201, 153, 94);
+    cursor: pointer;
+    color:rgb(238, 238, 238);
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0px 5px 10px rgb(134, 117, 102);
+    transition: transform 0.3s ease;
+}
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 3px 5px rgb(134, 117, 102);
+    
+}
+
+.input{
+    padding: 3px 6px;
+    font-weight:300;
+    font-size: 15px;
+    background-color: rgb(181, 178, 151);
+    border-radius: 3px;
+}
+.input::placeholder {  
+    font-size: 14px;
+    color: rgb(87, 85, 72);
+}
+.out{
+    padding: 7px;
+    resize: none;
+    background-color: rgb(181, 178, 151);
+
+
+}
+p{
+
+    font-size: 20px;
+    color: rgb(238, 238, 238);
+}
