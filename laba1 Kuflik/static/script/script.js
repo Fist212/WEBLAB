@@ -3,8 +3,16 @@ var arr;
 // get() читает элементы разделенные пробелом из inputObject и добавляет их в массив arr
 function get() {
     var Element = document.getElementById('inputObject');
-    var inputValue = Element.value;
-    return arr = inputValue.split(" ");
+    var inputValue = Element.value.trim().replace(/\s+/g, ' ');
+    arr = inputValue.split(" ");
+
+    if (!arr.some(isNaN)){
+        return arr;
+    }
+    else{
+        alert("Введенно некоректное значение!")
+    }
+
 }
 // sortArray() принимает аргумент массив элементов и сортирует его, возвращается отсортированный массив
 function sortArray(arr) {
